@@ -4,61 +4,31 @@ import { ThemeProvider } from "styled-components";
 import { GlobalStyle } from "./styles/global";
 
 import imgAbout from "./assets/img/ImgAbout.svg";
-import imgHero from "./assets/img/ImgHero.svg";
 
-import LogoSecondary from "./assets/logo/LogoSecondary.svg";
-import LogoPrimary from "./assets/logo/LogoPrimary.svg";
-
-import instagramIcon from "./assets/icons/instagramIcon.svg";
 import scissorsIcon from "./assets/icons/scissorsIcon.svg";
-import facebookIcon from "./assets/icons/facebookIcon.svg";
 import whatsappIcon from "./assets/icons/whatsappIcon.svg";
 import shampooIcon from "./assets/icons/shampooIcon.svg";
-import youtubeIcon from "./assets/icons/youtubeIcon.svg";
 import mappinIcon from "./assets/icons/mappinIcon.svg";
 import phoneIcon from "./assets/icons/phoneIcon.svg";
 import hairIcon from "./assets/icons/hairIcon.svg";
 import mailIcon from "./assets/icons/mailIcon.svg";
+
+import { Header } from "./components/Header";
+import { Footer } from "./components/Footer";
+import { HeroSection } from "./components/HeroSection";
 
 export function App() {
   return (
     <ThemeProvider theme={defaultTheme}>
       <GlobalStyle />
 
-      <Container>
-        <Content>
-          <header>
-            <img src={LogoPrimary} alt="" />
-            <ul className="menu">
-              <li>Início</li>
-              <li>Sobre</li>
-              <li>Serviços</li>
-              <li>Depoimentos</li>
-              <li>Contato</li>
-            </ul>
-          </header>
-        </Content>
-      </Container>
+      <Header/>
 
       <Container>
+        <HeroSection />
+        
         <Content>
           <main>
-            <section className="heroSection">
-
-              <div className="TextHeroSection">
-                <h1 className="title">
-                  saúde natural para os seus cabelos
-                </h1>
-                <strong className="subTitle">
-                  um salão exclusivo em São Paulo, especializado em tratamentos naturais.
-                </strong>
-                <button>
-                  agendar um horário
-                </button>
-              </div>
-
-              <img src={imgHero} alt="" />
-            </section>
 
             <section className="about">
               <img src={imgAbout} alt="" />
@@ -200,28 +170,7 @@ export function App() {
         </Content>
       </Container>
 
-      <Container>
-        <Content>
-          <footer>
-            <div className="areaText">
-              <img src={LogoSecondary} alt="" />
-              <h5>
-                &copy;
-                2024 Beautysalon.
-              </h5>
-              <h6>
-                Todos os direitos reservados.
-              </h6>
-            </div>
-
-            <div className="socialMidias">
-              <img src={instagramIcon} alt="" />
-              <img src={facebookIcon} alt="" />
-              <img src={youtubeIcon} alt="" />
-            </div>
-          </footer>
-        </Content>
-      </Container>
+      <Footer/>
     </ThemeProvider>
   )
 }
