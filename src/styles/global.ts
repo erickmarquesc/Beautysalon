@@ -6,13 +6,14 @@ export const GlobalStyle = createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
   };
+
+  html{
+    font-size: 10px;
+  }
   
   body {
-    font-size: 10px;
     font-weight: 400;
     font-family: 'Poppins', sans-serif;
     background: ${(props) => props.theme['backgound']};
   };
-  
-  
 `
