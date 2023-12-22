@@ -15,6 +15,10 @@ export const ContentDepoimentSection = styled(Content)`
     display: flex;
     justify-content: center;
 
+    @media(max-width: 900px) {
+      flex-wrap: wrap;
+    }
+
     .cardDepoiment{
       gap: 8px;
       display: flex;
