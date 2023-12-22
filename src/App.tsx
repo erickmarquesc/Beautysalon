@@ -15,6 +15,7 @@ import { Footer } from "./components/Footer";
 import { HeroSection } from "./components/HeroSection";
 import { AboutSection } from "./components/AboutSection";
 import { ServicesSection } from "./components/ServicesSection";
+import { DepoimentSection } from "./components/DepoimentsSection";
 
 export function App() {
   return (
@@ -26,39 +27,11 @@ export function App() {
       <Container>
         <HeroSection />
         <AboutSection />
-        <ServicesSection/>
+        <ServicesSection />
+        <DepoimentSection/>
         <Content>
           <main>
-            <section className="depoiments">
-              <h1>
-                depoimentos de quem já passou por aqui
-              </h1>
-
-              <div>
-                <div className="cardDepoiment">
-                  <p>
-                    Eu sou cliente do Beautysalon há 5 anos e não troco por nada!
-                    Certamente meu cabelo mudou muito depois que comecei a tratar somente com produtos naturais e veganos.
-                    São profissionais incríveis e qualificados.
-                  </p>
-
-                  <img />
-                  <label>Luna Falcão</label>
-                </div>
-
-                <div className="cardDepoiment">
-                  <p>
-                    Minha mãe frequenta o salão há anos e me levou um dia para conhecer.
-                    Minha experiência foi incrível, eu continuo fazendo o a terapia capilar e isso salvou o meu cabelo.
-                    Adoro todos os profissionais do Beautysalon.
-                  </p>
-
-                  <img />
-                  <label>Luna Falcão</label>
-                </div>
-              </div>
-
-            </section>
+            
 
             <section className="contact">
 
