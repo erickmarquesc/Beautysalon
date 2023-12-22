@@ -18,7 +18,7 @@ export const Title = styled.h1`
     text-transform: uppercase;
   }
 `
-export const SubTitle = styled.h1`
+export const SubTitle = styled.h2`
   font: 400 1.8rem 'DM Sans', sans-serif;
   color: ${(props) => props.theme['gray']};
 
