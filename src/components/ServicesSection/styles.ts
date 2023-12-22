@@ -21,21 +21,23 @@ export const ContainerServicesSection = styled(Content)`
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
+
   }
   
   .card{
     max-width: 352px;
-    padding: 58px 48px;
+    padding: 58px 18px;
     text-align: center;
     box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 5px;
     border-bottom: 4px solid ${(props) => props.theme['green']};
-
+    
     h1{
       font-size: 2.4rem;
     }
-
+    
     p{
       max-width: 25.6rem;
     }
+
   }
 `
