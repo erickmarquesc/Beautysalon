@@ -14,5 +14,23 @@ module.exports = {
       'warn',
       { allowConstantExport: true },
     ],
+    semi: ['error', 'never'],
+    quotes: ['error', 'single', { 'avoidEscape': true }],
+    camelcase: ['error', { 'properties': 'always', 'ignoreDestructuring': true }],
+    '@typescript-eslint/naming-convention': [
+      'error',
+      {
+        'selector': 'function',
+        'format': ['PascalCase'],
+      },
+      {
+        'selector': 'interface',
+        'format': ['PascalCase'],
+        'custom': {
+          'regex': '^I[A-Z]',
+          'match': true,
+        },
+      },
+    ],
   },
-}
+};
