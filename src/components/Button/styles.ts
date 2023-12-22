@@ -11,9 +11,10 @@ import styled from "styled-components";
     </Button>
  */
 export const Button = styled.button`
-  gap: 12px;
+  gap: 10px;
   border: none;
   display: flex;
+  max-width: 25rem;
   overflow: hidden;
   flex-wrap: nowrap;
   border-radius: 4px;
