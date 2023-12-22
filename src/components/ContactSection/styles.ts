@@ -4,6 +4,8 @@ import { Content } from "../containers/containers";
 export const ContentContactSection = styled(Content)`
 
   align-items: center;
+  flex-wrap: wrap;
+  gap: 64px;
 
   .textContactSection{
     max-width: 404px;
@@ -27,6 +29,7 @@ export const ContentContactSection = styled(Content)`
     display: flex;
     flex-direction: column;
     gap: 32px;
+    margin-right:80px;
     
     li{
       all: inherit;
