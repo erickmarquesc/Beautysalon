@@ -59,7 +59,9 @@ export const Header = () => {
                 menuItens.map((item, index) => {
                   return (
                     <li key={index}>
-                      <a href={item.url}>
+                      <a href={item.url}
+                        onClick={() => hasopenMenu()}
+                      >
                         {item.title}
                       </a>
                     </li>
