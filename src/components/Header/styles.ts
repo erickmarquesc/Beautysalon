@@ -20,6 +20,8 @@ export const ContentHeader = styled(Content)`
     align-items: center;
     justify-content: center;
 
+    border-radius: 8px;
+
     @media(min-width: 700px){
       display: none;
     };
@@ -81,4 +83,6 @@ export const HamburgerMenu = styled.div`
   border: 1px solid ${(props) => props.theme['gray-light']};
   padding: 10px;
   z-index: 1000;
+  border-radius: 8px;
+
 `
