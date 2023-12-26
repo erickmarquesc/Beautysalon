@@ -1,6 +1,5 @@
 import styled from 'styled-components'
-import { Content } from '../../containers/containers'
-
+import { Content } from '../../containers/styles'
 
 export const ContainerServicesSection = styled(Content)`
   gap: 56px;
@@ -12,7 +11,7 @@ export const ContainerServicesSection = styled(Content)`
   .titheaderServicesSection {
     max-width: 52.3rem;
     text-align: center;
-  }
+  };
 
   .contentCards {
     gap: 16px;
@@ -21,7 +20,7 @@ export const ContainerServicesSection = styled(Content)`
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
-  }
+  };
 
   .card {
     max-width: 352px;
@@ -32,10 +31,10 @@ export const ContainerServicesSection = styled(Content)`
 
     h1 {
       font-size: 2.4rem;
-    }
+    };
 
     p {
       max-width: 25.6rem;
-    }
-  }
+    };
+  };
 `

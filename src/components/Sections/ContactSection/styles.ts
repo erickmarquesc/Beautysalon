@@ -1,6 +1,5 @@
 import styled from 'styled-components'
-import { Content } from '../../containers/containers'
-
+import { Content } from '../../containers/styles'
 
 export const ContentContactSection = styled(Content)`
   gap: 64px;
@@ -15,14 +14,14 @@ export const ContentContactSection = styled(Content)`
 
     h2 {
       max-width: 364px;
-    }
+    };
 
     .ContenttextContactSection {
       gap: 12px;
       display: flex;
       flex-direction: column;
-    }
-  }
+    };
+  };
 
   .iconsContactSection {
     gap: 32px;
@@ -36,18 +35,18 @@ export const ContentContactSection = styled(Content)`
       flex-direction: row;
       align-items: center;
       gap: 12px;
-    }
+    };
 
     .typeEmail {
       &:after {
         content: "";
         display: inline-block;
         width: 0;
-      }
+      };
 
       &:first-letter {
         text-transform: lowercase;
-      }
-    }
-  }
+      };
+    };
+  };
 `

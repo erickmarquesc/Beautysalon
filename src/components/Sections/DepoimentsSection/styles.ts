@@ -1,15 +1,15 @@
 import styled from 'styled-components'
-import { Content } from '../../containers/containers'
-
+import { Content } from '../../containers/styles'
 
 export const ContentDepoimentSection = styled(Content)`
   flex-direction: column;
   align-items: center;
+  gap: 32px;
 
   h1 {
     max-width: 52.3rem;
     text-align: center;
-  }
+  };
 
   .ContentCards {
     gap: 32px;
@@ -18,7 +18,7 @@ export const ContentDepoimentSection = styled(Content)`
 
     @media (max-width: 900px) {
       flex-wrap: wrap;
-    }
+    };
 
     .cardDepoiment {
       gap: 8px;
@@ -37,8 +37,8 @@ export const ContentDepoimentSection = styled(Content)`
 
         img {
           width: 32px;
-        }
-      }
+        };
+      };
 
       p {
         line-height: 200%;
@@ -47,8 +47,8 @@ export const ContentDepoimentSection = styled(Content)`
         strong {
           font-size: 3.2rem;
           color: ${(props) => props.theme['green']};
-        }
-      }
-    }
-  }
+        };
+      };
+    };
+  };
 `

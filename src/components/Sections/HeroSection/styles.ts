@@ -1,36 +1,39 @@
 import styled from 'styled-components'
-import { Content } from '../../containers/containers'
+import { Content } from '../../containers/styles'
 
 
 export const ContentHeroSection = styled(Content)`
   gap: 32px;
   flex-wrap: wrap;
+  padding-top: 20px;
   align-items: center;
-
-  @media (max-width: 1100px) {
+  padding-bottom: 60px;
+  
+  @media(max-width: 1130px){
     text-align: center;
     justify-content: center;
     flex-wrap: wrap-reverse;
-
-    img {
+    
+    img{
       width: 100%;
-    }
-  }
-
-  img {
+    };
+  };
+  
+  img{
     max-width: 658px;
-  }
-
-  .textSection {
-    display: flex;
+  };
+  
+  .textSection{
     max-width: 39.6rem;
     align-items: center;
     flex-direction: column;
-
-    button {
+    
+    @media(max-width: 1130px){
+      display: flex;
+    };
+    
+    button{
       margin-top: 24px;
-      align-items: center;
-      justify-content: center;
-    }
-  }
+    };
+  };
 `

@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import {
   Container,
   Content
-} from '../containers/containers'
+} from '../containers/styles'
 
 export const ContainerFooter = styled(Container)`
   background-color:   ${(props) => props.theme['green']};
