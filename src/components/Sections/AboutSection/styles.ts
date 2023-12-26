@@ -9,6 +9,14 @@ export const ContentAboutSection = styled(Content)`
   @media (max-width: 1170px) {
     flex-wrap: wrap;
     justify-content: center;
+
+    img{
+      width: 100%;
+    };
+  };
+
+  img{
+    max-width: 658px;
   };
 
   .ContentDescription {
