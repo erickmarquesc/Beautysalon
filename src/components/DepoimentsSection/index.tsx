@@ -1,7 +1,7 @@
-import { Description, Title } from "../Text/styles"
-import { ContentDepoimentSection } from "./styles"
-import avatarI from "../../assets/img/users/UserImgI.svg"
-import avatarII from "../../assets/img/users/UserImg.svg"
+import { Description, Title } from '../Text/styles'
+import { ContentDepoimentSection } from './styles'
+import avatarI from '../../assets/img/users/UserImgI.svg'
+import avatarII from '../../assets/img/users/UserImg.svg'
 
 interface IDepoimentsAPI {
   descripation: string,
@@ -16,7 +16,7 @@ export const DepoimentSection = () => {
         `Eu sou cliente do Beautysalon há 5 anos e não troco por nada!
       Certamente meu cabelo mudou muito depois que comecei a tratar somente com produtos naturais e veganos.
       São profissionais incríveis e qualificados.`,
-      user: "Luna Falcão",
+      user: 'Luna Falcão',
       avatar: avatarI
     },
     {
@@ -24,7 +24,7 @@ export const DepoimentSection = () => {
         `Minha mãe frequenta o salão há anos e me levou um dia para conhecer.
       Minha experiência foi incrível, eu continuo fazendo o a terapia capilar e isso salvou o meu cabelo.
       Adoro todos os profissionais do Beautysalon.`,
-      user: "Wanessa Souza",
+      user: 'Wanessa Souza',
       avatar: avatarII
     },
   ]

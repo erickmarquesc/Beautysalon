@@ -1,6 +1,6 @@
-import imgAbout from "../../assets/img/ImgAbout.svg";
-import { Description, Title } from "../Text/styles";
-import { ContentAboutSection } from "./styles";
+import imgAbout from '../../assets/img/ImgAbout.svg'
+import { Description, Title } from '../Text/styles'
+import { ContentAboutSection } from './styles'
 
 export const AboutSection = () => {
   return (

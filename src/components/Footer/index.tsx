@@ -1,14 +1,14 @@
-import instagramIcon from "../../assets/icons/instagramIcon.svg";
-import LogoSecondary from "../../assets/logo/LogoSecondary.svg";
-import facebookIcon from "../../assets/icons/facebookIcon.svg";
-import youtubeIcon from "../../assets/icons/youtubeIcon.svg";
+import instagramIcon from '../../assets/icons/instagramIcon.svg'
+import LogoSecondary from '../../assets/logo/LogoSecondary.svg'
+import facebookIcon from '../../assets/icons/facebookIcon.svg'
+import youtubeIcon from '../../assets/icons/youtubeIcon.svg'
 
 import {
   ContainerFooter,
   ContentFooter,
   ContentSocialMidia,
   ContentTextFooter
-} from "./styles";
+} from './styles'
 
 export const Footer = () => {
   return (

@@ -1,7 +1,7 @@
-import imgHero from "../../assets/img/ImgHero.svg";
-import { Button } from "../Button/styles";
-import { SubTitle, Title } from "../Text/styles";
-import { ContentHeroSection } from "./styles";
+import imgHero from '../../assets/img/ImgHero.svg'
+import { Button } from '../Button/styles'
+import { SubTitle, Title } from '../Text/styles'
+import { ContentHeroSection } from './styles'
 
 export const HeroSection = () => {
   return (

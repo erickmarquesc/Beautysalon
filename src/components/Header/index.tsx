@@ -1,8 +1,8 @@
-import LogoPrimary from "../../assets/logo/LogoPrimary.svg";
+import LogoPrimary from '../../assets/logo/LogoPrimary.svg'
 import {
   ContainerHeader,
   ContentHeader
-} from "./styles";
+} from './styles'
 
 interface IMenuItens {
   title: string,
@@ -16,7 +16,7 @@ export const Header = () => {
     { title: 'serviços', url: '#servicos' },
     { title: 'depoimentos', url: '#depoimentos' },
     { title: 'contato', url: '#contato' },
-  ];
+  ]
 
   return (
     <ContainerHeader as='header'>

@@ -1,8 +1,8 @@
-import scissorsIcon from "../../assets/icons/scissorsIcon.svg";
-import shampooIcon from "../../assets/icons/shampooIcon.svg";
-import hairIcon from "../../assets/icons/hairIcon.svg";
-import { ContainerServicesSection } from "./styles";
-import { Description, SubTitle, Title } from "../Text/styles";
+import scissorsIcon from '../../assets/icons/scissorsIcon.svg'
+import shampooIcon from '../../assets/icons/shampooIcon.svg'
+import hairIcon from '../../assets/icons/hairIcon.svg'
+import { ContainerServicesSection } from './styles'
+import { Description, SubTitle, Title } from '../Text/styles'
 
 export const ServicesSection = () => {
   return (

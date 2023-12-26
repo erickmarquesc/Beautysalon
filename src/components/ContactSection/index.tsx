@@ -1,11 +1,11 @@
-import whatsappIcon from "../../assets/icons/whatsappIcon.svg";
+import whatsappIcon from '../../assets/icons/whatsappIcon.svg'
 
-import mappinIcon from "../../assets/icons/mappinIcon.svg";
-import phoneIcon from "../../assets/icons/phoneIcon.svg";
-import mailIcon from "../../assets/icons/mailIcon.svg";
-import { ContentContactSection } from "./styles";
-import { SubTitle, Title } from "../Text/styles";
-import { Button } from "../Button/styles";
+import mappinIcon from '../../assets/icons/mappinIcon.svg'
+import phoneIcon from '../../assets/icons/phoneIcon.svg'
+import mailIcon from '../../assets/icons/mailIcon.svg'
+import { ContentContactSection } from './styles'
+import { SubTitle, Title } from '../Text/styles'
+import { Button } from '../Button/styles'
 export const ContactSection = () => {
   return (
     <ContentContactSection>
