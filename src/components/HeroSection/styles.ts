@@ -8,7 +8,7 @@ export const ContentHeroSection = styled(Content)`
   align-items: center;
   padding-bottom: 60px;
   
-  @media(max-width: 1100px){
+  @media(max-width: 1130px){
     text-align: center;
     justify-content: center;
     flex-wrap: wrap-reverse;
