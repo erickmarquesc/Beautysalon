@@ -12,11 +12,41 @@ export const ContainerHeader = styled(Container)`
 export const ContentHeader = styled(Content)`
   align-items: center;
 
+  button{
+    border: none;
+    display: flex;
+    padding: 12px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+
+    @media(min-width: 700px){
+      display: none;
+    };
+  };
+
+  .notMobile{ 
+    @media(max-width: 700px){
+      display: none;
+    };
+  };
+  .mobile{
+    @media(min-width: 700px){
+      display: none;
+    };
+  };
+
   ul{
     gap: 32px;
     display: flex;
     padding: 10px 2px;
     flex-direction: row;
+
+    @media(max-width: 700px){
+      gap: 16px;
+      padding: 8px 2px;
+      flex-direction: column;
+    }
 
     li{
       all: inherit;
@@ -35,5 +65,20 @@ export const ContentHeader = styled(Content)`
         };
       };
     };
+
+    
   };
+`
+
+export const HamburgerMenu = styled.div`
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 68px;
+  right: 0;
+  width: 200px;
+  background-color: ${(props) => props.theme['white']};
+  border: 1px solid ${(props) => props.theme['gray-light']};
+  padding: 10px;
+  z-index: 1000;
 `

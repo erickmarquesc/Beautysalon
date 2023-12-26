@@ -1,9 +1,12 @@
 import LogoPrimary from '../../assets/logo/LogoPrimary.svg'
 import {
   ContainerHeader,
-  ContentHeader
+  ContentHeader,
+  HamburgerMenu
 } from './styles'
 
+import imgMenu from '../../assets/icons/menu.svg'
+import { useState } from 'react'
 interface IMenuItens {
   title: string,
   url: string,
@@ -18,12 +21,18 @@ export const Header = () => {
     { title: 'contato', url: '#contact' },
   ]
 
+  const [openMenu, setOpemMenu] = useState(false)
+
+  const hasopenMenu = () => {
+    setOpemMenu(!openMenu)
+  }
+
   return (
     <ContainerHeader as='header' header>
       <ContentHeader>
         <img src={LogoPrimary} alt="" />
 
-        <ul >
+        <ul className='notMobile'>
           {
             menuItens.map((item, index) => {
               return (
@@ -36,6 +45,32 @@ export const Header = () => {
             })
           }
         </ul>
+
+        <button
+          onClick={() => hasopenMenu()}
+        >
+          <img src={imgMenu} />
+        </button>
+
+        {openMenu && (
+          <HamburgerMenu className='mobile'>
+            <ul >
+              {
+                menuItens.map((item, index) => {
+                  return (
+                    <li key={index}>
+                      <a href={item.url}>
+                        {item.title}
+                      </a>
+                    </li>
+                  )
+                })
+              }
+            </ul>
+          </HamburgerMenu>
+
+        )}
+
       </ContentHeader>
     </ContainerHeader>
   )
