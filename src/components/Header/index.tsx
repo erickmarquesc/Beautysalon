@@ -11,11 +11,11 @@ interface IMenuItens {
 
 export const Header = () => {
   const menuItens: IMenuItens[] = [
-    { title: 'início', url: '#inicio' },
-    { title: 'sobre', url: '#sobre' },
-    { title: 'serviços', url: '#servicos' },
-    { title: 'depoimentos', url: '#depoimentos' },
-    { title: 'contato', url: '#contato' },
+    { title: 'início', url: '#hero' },
+    { title: 'sobre', url: '#about' },
+    { title: 'serviços', url: '#services' },
+    { title: 'depoimentos', url: '#depoiment' },
+    { title: 'contato', url: '#contact' },
   ]
 
   return (

@@ -8,7 +8,7 @@ import imgHero from '../../../assets/img/ImgHero.svg'
 
 export const HeroSection = () => {
   return (
-    <Container>
+    <Container id='hero'>
       <ContentHeroSection>
         <div className="textSection">
           <Title>

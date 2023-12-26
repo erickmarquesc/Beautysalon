@@ -8,8 +8,8 @@ import imgAbout from '../../../assets/img/ImgAbout.svg'
 
 export const AboutSection = () => {
   return (
-    <Container>
-      <ContentAboutSection>
+    <Container id='about'>
+      <ContentAboutSection >
         <img src={imgAbout} alt="" />
         <div>
           <Title>

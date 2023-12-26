@@ -8,7 +8,7 @@ import hairIcon from '../../../assets/icons/hairIcon.svg'
 
 export const ServicesSection = () => {
   return (
-    <Container>
+    <Container id='services'>
       <ContainerServicesSection >
         <div className="titheaderServicesSection">
           <Title>

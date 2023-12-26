@@ -12,7 +12,7 @@ import { Container } from '../../containers/styles'
 
 export const ContactSection = () => {
   return (
-    <Container>
+    <Container id='contact'>
       <ContentContactSection>
         <div className="textContactSection">
           <div className="ContenttextContactSection">
