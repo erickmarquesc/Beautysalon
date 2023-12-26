@@ -1,8 +1,8 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 import {
   Container,
   Content
-} from "../containers/containers";
+} from '../containers/containers'
 
 export const ContainerHeader = styled(Container)`
   background-color: ${(props) => props.theme['white']};
@@ -32,8 +32,8 @@ export const ContentHeader = styled(Content)`
           cursor: pointer;
           border-radius: 0 0 2px 2px;
           border-bottom: 3px solid ${(props) => props.theme['green']};
-        }
-      }
-    }
-  }
+        };
+      };
+    };
+  };
 `

@@ -1,5 +1,5 @@
-import styled from "styled-components"
-import { Content } from "../containers/containers"
+import styled from 'styled-components'
+import { Content } from '../containers/containers'
 
 export const ContentHeroSection = styled(Content)`
   gap: 32px;
@@ -31,6 +31,5 @@ export const ContentHeroSection = styled(Content)`
     button{
       margin-top: 24px;
     };
-
   };
 `

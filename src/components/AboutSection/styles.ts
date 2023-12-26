@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { Content } from "../containers/containers";
+import styled from 'styled-components'
+import { Content } from '../containers/containers'
 
 export const ContentAboutSection = styled(Content)`  
   max-width: 1350px;
@@ -12,8 +12,8 @@ export const ContentAboutSection = styled(Content)`
     
     img{
       width: 100%;
-    }
-  }
+    };
+  };
 
   img{
     max-width: 658px;
@@ -24,5 +24,5 @@ export const ContentAboutSection = styled(Content)`
     display: flex;
     max-width: 610px;
     flex-direction: column;
-  }
+  };
 `

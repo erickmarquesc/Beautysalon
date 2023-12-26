@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const Title = styled.h1`
   font: 700 3.6rem 'Poppins', sans-serif;
@@ -12,11 +12,11 @@ export const Title = styled.h1`
     content: '';
     display: inline-block;
     width: 0;
-  }
+  };
 
   &:first-letter {
     text-transform: uppercase;
-  }
+  };
 `
 export const SubTitle = styled.h2`
   font: 400 1.8rem 'DM Sans', sans-serif;
@@ -29,11 +29,11 @@ export const SubTitle = styled.h2`
     content: '';
     display: inline-block;
     width: 0;
-  }
+  };
 
   &:first-letter {
     text-transform: uppercase;
-  }
+  };
 `
 export const Description = styled.p`
   font: 400 1.6rem 'DM Sans', sans-serif;
@@ -46,9 +46,9 @@ export const Description = styled.p`
     content: '';
     display: inline-block;
     width: 0;
-  }
+  };
 
   &:first-letter {
     text-transform: uppercase;
-  }
+  };
 `

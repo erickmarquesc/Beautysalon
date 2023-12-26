@@ -1,9 +1,9 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const Container = styled.div`
   height: auto;
   padding: 20px 0;
-`;
+`
 
 export const Content = styled.div`
   width: 100%;
@@ -12,4 +12,4 @@ export const Content = styled.div`
   padding: 0 15px;
   max-width: 1120px;
   justify-content: space-between;
-`;
+`

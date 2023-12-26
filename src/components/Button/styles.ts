@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 /**
  * @component @example
@@ -32,7 +32,7 @@ export const Button = styled.button`
 
   &:hover{
     filter: brightness(80%);
-  }
+  };
   
   label{
     cursor: pointer;
@@ -41,10 +41,10 @@ export const Button = styled.button`
       content: '';
       display: inline-block;
       width: 0;
-    }
+    };
     
     &:first-letter {
       text-transform: uppercase;
-    }
-  }
+    };
+  };
 `
