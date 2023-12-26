@@ -1,9 +1,10 @@
-import { Container } from '@/components/containers/styles'
-import { Description, Title } from '@/components/Text/styles'
+
 import { ContentDepoimentSection } from './styles'
 
-import avatarI from '@/assets/img/users/UserImgI.svg'
-import avatarII from '@/assets/img/users/UserImg.svg'
+import avatarI from '../../../assets/img/users/UserImgI.svg'
+import avatarII from '../../../assets/img/users/UserImg.svg'
+import { Container } from '../../containers/containers'
+import { Title, Description } from '../../Text/styles'
 
 interface IDepoimentsAPI {
   descripation: string,

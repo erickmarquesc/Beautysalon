@@ -1,13 +1,14 @@
-import { Container } from '@/components/containers/styles'
-import { SubTitle, Title } from '@/components/Text/styles'
-import { Button } from '@/components/Button/styles'
+
 
 import { ContentContactSection } from './styles'
 
-import whatsappIcon from '@/assets/icons/whatsappIcon.svg'
-import mappinIcon from '@/assets/icons/mappinIcon.svg'
-import phoneIcon from '@/assets/icons/phoneIcon.svg'
-import mailIcon from '@/assets/icons/mailIcon.svg'
+import whatsappIcon from '../../../assets/icons/whatsappIcon.svg'
+import mappinIcon from '../../../assets/icons/mappinIcon.svg'
+import phoneIcon from '../../../assets/icons/phoneIcon.svg'
+import mailIcon from '../../../assets/icons/mailIcon.svg'
+import { Button } from '../../Button/styles'
+import { Title, SubTitle } from '../../Text/styles'
+import { Container } from '../../containers/containers'
 
 export const ContactSection = () => {
   return (

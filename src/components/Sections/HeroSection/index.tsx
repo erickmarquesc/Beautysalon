@@ -1,9 +1,10 @@
-import { Container } from '@/components/containers/styles'
-import { SubTitle, Title } from '@/components/Text/styles'
-import { ContentHeroSection } from './styles'
-import { Button } from '@/components/Button/styles'
 
-import imgHero from '@/assets/img/ImgHero.svg'
+import { Button } from '../../Button/styles'
+import { Title, SubTitle } from '../../Text/styles'
+import { Container } from '../../containers/containers'
+import { ContentHeroSection } from './styles'
+
+import imgHero from '../../../assets/img/ImgHero.svg'
 
 export const HeroSection = () => {
   return (

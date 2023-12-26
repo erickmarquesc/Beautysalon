@@ -1,9 +1,10 @@
-import { Container } from '@/components/containers/styles'
-import { Description, Title } from '@/components/Text/styles'
 
+
+import { Container } from '../../containers/containers'
+import { Title, Description } from '../../Text/styles'
 import { ContentAboutSection } from './styles'
 
-import imgAbout from '@/assets/img/ImgAbout.svg'
+import imgAbout from '../../../assets/img/ImgAbout.svg'
 
 export const AboutSection = () => {
   return (
