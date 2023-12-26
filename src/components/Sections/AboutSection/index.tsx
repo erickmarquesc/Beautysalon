@@ -1,6 +1,6 @@
 
 
-import { Container } from '../../containers/containers'
+import { Container } from '../../containers/styles'
 import { Title, Description } from '../../Text/styles'
 import { ContentAboutSection } from './styles'
 

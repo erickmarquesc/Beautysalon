@@ -1,18 +1,9 @@
-import { Container } from './components/containers/containers'
 import { defaultTheme } from './styles/theme/default'
 import { ThemeProvider } from 'styled-components'
 import { GlobalStyle } from './styles/global'
-
-
-
-
 import { Header } from './components/Header'
 import { Footer } from './components/Footer'
-import { HeroSection } from './components/HeroSection'
-import { AboutSection } from './components/AboutSection'
-import { ServicesSection } from './components/ServicesSection'
-import { DepoimentSection } from './components/DepoimentsSection'
-import { ContactSection } from './components/ContactSection'
+import { Main } from './components/Main'
 
 export function App() {
   return (
@@ -21,15 +12,13 @@ export function App() {
 
       <Header />
 
-      <main>
-        <Container>
-          <HeroSection />
-          <AboutSection />
-          <ServicesSection />
-          <DepoimentSection />
-          <ContactSection/>
-        </Container>
-      </main>
+      <Main.Root>
+        <Main.Hero />
+        <Main.About />
+        <Main.Services />
+        <Main.Depoiment />
+        <Main.Contact/>
+      </Main.Root>
 
       <Footer />
     </ThemeProvider>

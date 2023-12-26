@@ -1,7 +1,7 @@
 
 import { Button } from '../../Button/styles'
 import { Title, SubTitle } from '../../Text/styles'
-import { Container } from '../../containers/containers'
+import { Container } from '../../containers/styles'
 import { ContentHeroSection } from './styles'
 
 import imgHero from '../../../assets/img/ImgHero.svg'

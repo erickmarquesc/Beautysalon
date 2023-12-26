@@ -8,7 +8,7 @@ import phoneIcon from '../../../assets/icons/phoneIcon.svg'
 import mailIcon from '../../../assets/icons/mailIcon.svg'
 import { Button } from '../../Button/styles'
 import { Title, SubTitle } from '../../Text/styles'
-import { Container } from '../../containers/containers'
+import { Container } from '../../containers/styles'
 
 export const ContactSection = () => {
   return (
