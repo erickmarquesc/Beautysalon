@@ -9,6 +9,8 @@ export const ContainerFooter = styled(Container)`
 `
 export const ContentFooter = styled(Content)`
   align-items: center;
+  flex-wrap: wrap;
+  gap: 32px;
 `
 
 export const ContentTextFooter = styled.div`
