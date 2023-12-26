@@ -10,7 +10,14 @@ export const ContentAboutSection = styled(Content)`
     flex-wrap: wrap;
     justify-content: center;
     
+    img{
+      width: 100%;
+    }
   }
+
+  img{
+    max-width: 658px;
+  };
   
   .ContentDescription{
     gap: 12px;
