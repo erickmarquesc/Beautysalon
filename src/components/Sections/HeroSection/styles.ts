@@ -1,6 +1,6 @@
 import styled from 'styled-components'
+import { Content } from '../../containers/containers'
 
-import { Content } from '@/components/containers/styles'
 
 export const ContentHeroSection = styled(Content)`
   gap: 32px;

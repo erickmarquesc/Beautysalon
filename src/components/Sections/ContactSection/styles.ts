@@ -1,6 +1,6 @@
 import styled from 'styled-components'
+import { Content } from '../../containers/containers'
 
-import { Content } from '@/components/containers/styles'
 
 export const ContentContactSection = styled(Content)`
   gap: 64px;
