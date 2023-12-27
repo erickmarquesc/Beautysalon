@@ -1,6 +1,7 @@
 import styled from 'styled-components'
+import { motion } from 'framer-motion'
 
-export const Title = styled.h1`
+export const Title = styled(motion.h1)`
   font: 700 3.6rem 'Poppins', sans-serif;
   color: ${(props) => props.theme['green-dark']};
   text-transform: capitalize;

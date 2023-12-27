@@ -3,15 +3,33 @@
 import { Container } from '../../containers/styles'
 import { Title, Description } from '../../Text/styles'
 import { ContentAboutSection } from './styles'
+import { motion } from 'framer-motion'
 
 import imgAbout from '../../../assets/img/ImgAbout.svg'
+import { useInView } from 'react-intersection-observer'
 
 export const AboutSection = () => {
+
+  const [ref, inView] = useInView({
+    triggerOnce: true, // Garante que a animação só aconteça uma vez
+  })
+
   return (
     <Container id='about'>
       <ContentAboutSection >
-        <img src={imgAbout} alt="" />
-        <div>
+        <motion.img
+          ref={ref}
+          src={imgAbout} alt=""
+          initial={{ opacity: 0, y: '10%' }}
+          animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: '10%' }}
+          transition={{ duration: 1.5, ease: 'easeInOut' }}
+        />
+        <motion.div
+          ref={ref}
+          initial={{ opacity: 0, y: '10%' }}
+          animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: '10%' }}
+          transition={{ duration: 1.5, ease: 'easeInOut' }}
+        >
           <Title>
             sobre nós
           </Title>
@@ -32,7 +50,7 @@ export const AboutSection = () => {
               Venha viver a experiência Beautysalon, onde a excelência se une à tradição e inovação.
             </Description>
           </div>
-        </div>
+        </motion.div>
       </ContentAboutSection>
     </Container>
   )

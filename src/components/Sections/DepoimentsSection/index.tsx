@@ -5,6 +5,8 @@ import avatarI from '../../../assets/img/users/UserImgI.svg'
 import avatarII from '../../../assets/img/users/UserImg.svg'
 import { Container } from '../../containers/styles'
 import { Title, Description } from '../../Text/styles'
+import { useInView } from 'react-intersection-observer'
+import { motion } from 'framer-motion'
 
 interface IDepoimentsAPI {
   descripation: string,
@@ -12,7 +14,9 @@ interface IDepoimentsAPI {
   avatar: string,
 }
 export const DepoimentSection = () => {
-
+  const [ref, inView] = useInView({
+    triggerOnce: true, // Garante que a animação só aconteça uma vez
+  })
   const depoimentsAPI: IDepoimentsAPI[] = [
     {
       descripation:
@@ -34,14 +38,26 @@ export const DepoimentSection = () => {
   return (
     <Container id='depoiment'>
       <ContentDepoimentSection>
-        <Title>
+        <Title
+          ref={ref}
+          initial={{ opacity: 0, y: '10%' }}
+          animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: '10%' }}
+          transition={{ duration: 1.5, ease: 'easeInOut' }}
+        >
           depoimentos de quem já passou por aqui
         </Title>
 
         <div className="ContentCards">
           {depoimentsAPI.map((depoiment, index) => {
             return (
-              <div className="cardDepoiment" key={index}>
+              <motion.div
+                className="cardDepoiment"
+                key={index}
+                ref={ref}
+                initial={{ opacity: 0, y: '10%' }}
+                animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: '10%' }}
+                transition={{ duration: 1.5, ease: 'easeInOut' }}
+              >
                 <Description>
                   <strong>
                     "
@@ -60,7 +76,7 @@ export const DepoimentSection = () => {
                     {depoiment.user}
                   </Description>
                 </section>
-              </div>
+              </motion.div>
             )
           })}
         </div>

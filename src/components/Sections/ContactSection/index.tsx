@@ -9,12 +9,23 @@ import mailIcon from '../../../assets/icons/mailIcon.svg'
 import { Button } from '../../Button/styles'
 import { Title, SubTitle } from '../../Text/styles'
 import { Container } from '../../containers/styles'
+import { motion } from 'framer-motion'
+import { useInView } from 'react-intersection-observer'
 
 export const ContactSection = () => {
+  const [ref, inView] = useInView({
+    triggerOnce: true, // Garante que a animação só aconteça uma vez
+  })
   return (
     <Container id='contact'>
       <ContentContactSection>
-        <div className="textContactSection">
+        <motion.div
+          className="textContactSection"
+          ref={ref}
+          initial={{ opacity: 0, y: '10%' }}
+          animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: '10%' }}
+          transition={{ duration: 1.5, ease: 'easeInOut' }}
+        >
           <div className="ContenttextContactSection">
             <Title>
               entre em contato com a gente!
@@ -28,9 +39,14 @@ export const ContactSection = () => {
             <img src={whatsappIcon} />
             Entrar em contato
           </Button>
-        </div>
+        </motion.div>
 
-        <ul className="iconsContactSection">
+        <motion.ul className="iconsContactSection"
+          ref={ref}
+          initial={{ opacity: 0, y: '10%' }}
+          animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: '10%' }}
+          transition={{ duration: 1.5, ease: 'easeInOut' }}
+        >
           <li>
             <img src={phoneIcon} alt="" />
             <SubTitle>
@@ -49,7 +65,7 @@ export const ContactSection = () => {
               erickmarques3@gmail.com
             </SubTitle>
           </li>
-        </ul>
+        </motion.ul>
       </ContentContactSection>
     </Container>
   )

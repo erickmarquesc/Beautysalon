@@ -5,21 +5,36 @@ import { ContainerServicesSection } from './styles'
 import scissorsIcon from '../../../assets/icons/scissorsIcon.svg'
 import shampooIcon from '../../../assets/icons/shampooIcon.svg'
 import hairIcon from '../../../assets/icons/hairIcon.svg'
+import { motion } from 'framer-motion'
+import { useInView } from 'react-intersection-observer'
 
 export const ServicesSection = () => {
+  const [ref, inView] = useInView({
+    triggerOnce: true, // Garante que a animação só aconteça uma vez
+  })
   return (
     <Container id='services'>
       <ContainerServicesSection >
-        <div className="titheaderServicesSection">
+        <motion.div className="titheaderServicesSection"
+          ref={ref}
+          initial={{ opacity: 0, y: '10%' }}
+          animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: '10%' }}
+          transition={{ duration: 1.5, ease: 'easeInOut' }}
+        >
           <Title>
             serviços
           </Title>
           <SubTitle>
             com mais de 10 anos no mercado, o Beautysalon já conquistou clientes de inúmeros países com seus tratamentos exclusivos e totalmente naturais.
           </SubTitle>
-        </div>
+        </motion.div>
 
-        <div className="contentCards">
+        <motion.div className="contentCards"
+          ref={ref}
+          initial={{ opacity: 0, y: '10%' }}
+          animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: '10%' }}
+          transition={{ duration: 1.5, ease: 'easeInOut' }}
+        >
 
           <div className="card">
             <img src={hairIcon} alt="" />
@@ -51,7 +66,7 @@ export const ServicesSection = () => {
             </Description>
           </div>
 
-        </div>
+        </motion.div>
       </ContainerServicesSection>
     </Container>
   )

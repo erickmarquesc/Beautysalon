@@ -5,12 +5,17 @@ import { Container } from '../../containers/styles'
 import { ContentHeroSection } from './styles'
 
 import imgHero from '../../../assets/img/ImgHero.svg'
+import { motion } from 'framer-motion'
 
 export const HeroSection = () => {
   return (
     <Container id='hero'>
       <ContentHeroSection>
-        <div className="textSection">
+        <motion.div className="textSection"
+          initial={{ opacity: 0, y: '10%' }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1.5, ease: 'easeInOut' }}
+        >
           <Title>
             saúde natural para os seus cabelos
           </Title>
@@ -25,8 +30,14 @@ export const HeroSection = () => {
             </label>
           </Button>
 
-        </div>
-        <img src={imgHero} alt="" />
+        </motion.div>
+        <motion.img
+          src={imgHero}
+          alt=""
+          initial={{ opacity: 0, x: '10%' }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 2.5, ease: 'easeInOut' }}
+        />
       </ContentHeroSection>
     </Container>
   )

@@ -7,7 +7,7 @@ import {
 export const ContainerHeader = styled(Container)`
   background-color: ${(props) => props.theme['white']};
   border-bottom: 1px solid ${(props) => props.theme['gray-light']};
-
+  z-index: 1000;
   position: fixed;
   width: 100%;
 `
