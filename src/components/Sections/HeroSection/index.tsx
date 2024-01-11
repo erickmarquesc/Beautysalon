@@ -1,11 +1,13 @@
 
-import { Button } from '../../Button/styles'
 import { Title, SubTitle } from '../../Text/styles'
 import { Container } from '../../containers/styles'
 import { ContentHeroSection } from './styles'
 
 import imgHero from '../../../assets/img/ImgHero.svg'
 import { motion } from 'framer-motion'
+
+import { handleButtonCTAClick } from '../../../utils/handleButtonCTAClick'
+import { ButtonCTA } from '../../Button'
 
 export const HeroSection = () => {
   return (
@@ -24,11 +26,10 @@ export const HeroSection = () => {
             especializado em tratamentos naturais.
           </SubTitle>
 
-          <Button>
-            <label>
-              agendar um horário
-            </label>
-          </Button>
+          <ButtonCTA
+            onClick={()=>{handleButtonCTAClick()}}
+            label='agendar um horário'
+          />
 
         </motion.div>
         <motion.img
