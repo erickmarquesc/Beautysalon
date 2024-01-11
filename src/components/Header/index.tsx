@@ -28,7 +28,7 @@ export const Header = () => {
   }
 
   return (
-    <ContainerHeader as='header' header>
+    <ContainerHeader as='header' isheader='true'>
       <ContentHeader>
         <img src={LogoPrimary} alt="" />
 

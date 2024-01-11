@@ -1,12 +1,12 @@
 import styled from 'styled-components'
 
 interface IContainer {
-  header?: boolean;
+  isheader?: string | undefined;
 }
 
 export const Container = styled.div<IContainer>`
   height: auto;
-  padding: ${(props) => (props.header ? '10px' : '80px')} 0;
+  padding: ${(props) => (props.isheader ? '10px' : '80px')} 0;
   
   border-bottom: 2px solid;
   border-image: linear-gradient(90deg, rgba(105,185,157,1) 0%, rgba(204,244,230,0.34) 100%);
