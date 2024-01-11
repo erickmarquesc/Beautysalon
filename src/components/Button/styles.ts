@@ -1,15 +1,5 @@
 import styled from 'styled-components'
 
-/**
- * @component @example
- * // Exemplo de uso:
- * <Button>
-      <img src={icon} />
-        <label>
-          text button
-        </label>
-    </Button>
- */
 export const Button = styled.button`
   gap: 10px;
   border: none;
@@ -34,7 +24,7 @@ export const Button = styled.button`
     filter: brightness(80%);
   };
   
-  label{
+  span{
     cursor: pointer;
 
     &:after {
